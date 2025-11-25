@@ -3,7 +3,7 @@ import os
 
 name = os.getenv("NAME", "Friend")
 
-print(f"Hello {name} 👋")
+print(f"Hello {name}")
 print("I am running inside a Docker container.")
 
 with open("message.txt", "w") as f:
