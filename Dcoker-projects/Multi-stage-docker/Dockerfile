@@ -2,10 +2,6 @@
 FROM golang:1.20 AS build
 WORKDIR /projectscr
 
-# If you're using Go modules, copy go.mod first (cache deps)
-COPY go.mod go.sum ./
-RUN go mod download
-
 # Copy app source
 COPY . /projectscr
 
